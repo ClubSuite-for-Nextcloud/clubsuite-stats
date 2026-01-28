@@ -1,0 +1,11 @@
+{
+  "translations": {
+    "appName": "Statistics & Reports",
+    "dashboard": "Dashboard",
+    "members": "Members",
+    "finances": "Finances",
+    "meetings": "Meetings",
+    "inventory": "Inventory"
+  },
+  "pluralForm": "nplurals=2; plural=(n != 1);"
+}

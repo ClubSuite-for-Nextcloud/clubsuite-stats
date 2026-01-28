@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>clubsuite-stats</id>
+    <name>ClubSuite Statistics</name>
+    <summary>Statistiken und Berichte</summary>
+    <description><![CDATA[# ClubSuite Statistics
+
+Datenvisualisierung über alle ClubSuite-Module hinweg.
+
+## Features
+- **Dashboard**: Übersicht aller Kennzahlen
+- **Mitgliederentwicklung**: Zu-/Abgänge, Altersstruktur
+- **Finanzen**: Einnahmen/Ausgaben-Charts
+- **Aktivitäten**: Trainings-/Probenteilnahme
+- **Export**: PDF-Berichte für Jahreshauptversammlung
+
+## Voraussetzung
+Erfordert ClubSuite Core. Zusätzliche Module erweitern die Statistiken.]]></description>
+    <version>1.2.0</version>
+    <licence>agpl</licence>
+    <author>Stefan Schulz</author>
+    <namespace>ClubSuiteStats</namespace>
+    <category>organization</category>
+    <website>https://github.com/clubsuite/clubsuite-stats</website>
+    <bugs>https://github.com/clubsuite/clubsuite-stats/issues</bugs>
+    <repository type="git">https://github.com/clubsuite/clubsuite-stats.git</repository>
+    <screenshot>https://raw.githubusercontent.com/clubsuite/clubsuite-stats/main/screenshots/dashboard.png</screenshot>
+    <dependencies>
+        <nextcloud min-version="28" max-version="32" />
+        <php min-version="8.1" max-version="8.3" />
+    </dependencies>
+    <navigations>
+        <navigation>
+            <id>clubsuite-stats</id>
+            <name>Statistik</name>
+            <route>clubsuite-stats.page.index</route>
+            <icon>app.svg</icon>
+            <order>10</order>
+        </navigation>
+    </navigations>
+</info>
